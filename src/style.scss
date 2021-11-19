@@ -1,0 +1,85 @@
+$background-primary: #6197ed;
+$background-upload-card: #fff;
+$text-primary: #2f2d2f;
+$text-secondary: #ccc;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: $background-primary !important;
+	color: $text-primary;
+}
+
+.u-flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.u-letter-space-2 {
+	letter-spacing: 2px;
+}
+
+.upload-card {
+	background-color: $background-upload-card;
+	padding: 3rem;
+	border-radius: 18px;
+	box-shadow: 0px 5px 25px #3e5b8a;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.drop-area {
+	border: 2px dashed #accafa;
+	padding: 10%;
+	border-radius: 1rem;
+	position: relative;
+	background-color: rgb(249, 250, 253);
+}
+
+.drop-area input {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.drop-area:hover,
+.drop-area .drag-over {
+	opacity: 0.7;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.progress {
+	height: 5px !important;
+	width: 100%;
+}
+
+.u-medium-opacity {
+	opacity: 0.5;
+}
+
+h6 {
+	margin-bottom: 0 !important;
+}
+
+.file-name {
+	font-size: 0.9375rem;
+}
+
+@media only screen and (max-width: 575px) {
+	.upload-card {
+		padding: 1rem;
+	}
+}
